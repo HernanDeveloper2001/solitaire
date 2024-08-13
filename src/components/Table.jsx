@@ -1,5 +1,6 @@
 import "../styles/table.css";
 import Card from "./Card.jsx";
+import CardDeck from "./CardDeck.jsx";
 import burgerMenu from "../assets/imgs/icon-burger-menu.svg";
 import BurgerMenu from "../functions/BurgerMenu.jsx";
 import "../styles/menu.css";
@@ -13,8 +14,7 @@ const Table = () => {
 
   //Context
 
-  const { newRemainingCards, newCardList ,showGame,onHandleRestoreCardClick, onHandleCardClick,onHandleGame, onHandleQuitGame } =
-    useContext(ContextDeck);
+  const { newRemainingCards,offsetStep, newCardList ,showGame,onHandleRestoreCardClick,onHandleGame, onHandleQuitGame,onHandleCardClick,onHandleCardValue,isLastCardTrue } = useContext(ContextDeck);
   //---------
 
   return (
@@ -35,7 +35,7 @@ const Table = () => {
                 return (
                   <div className="card-shuffled" key={indexE}>
                     {itemE.map((itemC, indexC) => {
-                      return <Card card={itemC} index={indexC} key={indexC}  />;
+                      return <Card isLastCardTrue={isLastCardTrue} onHandleCardValue={onHandleCardValue} offsetStep={offsetStep} card={itemC} index={indexC} key={indexC}  />;
                     })}
                   </div>
                 );
@@ -47,7 +47,7 @@ const Table = () => {
               {newRemainingCards.length >= 1 ? (
                 <div className="deck">
                   {newRemainingCards.map((item, index) => {
-                    return <Card card={item} index={index} key={index} onHandleCardClick={() => onHandleCardClick(index)} />;
+                    return <CardDeck card={item} index={index} key={index} onHandleCardClick={onHandleCardClick} />;
                   })}
                 </div>
               ) : (
@@ -107,7 +107,7 @@ const Table = () => {
                 <div className="start-game">
                   <button
                     type="button"
-                    onClick={onHandleGame}
+                    // onClick={onHandleGame}
                     className="start-game-button"
                   >
                     NEW GAME

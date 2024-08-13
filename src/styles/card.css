@@ -6,4 +6,5 @@
     object-position: center;
     cursor: pointer;
     position: absolute;
+    border: 1px solid black;
 }

@@ -1,16 +1,15 @@
 import "../styles/card.css";
 import { PropTypes } from "prop-types";
-import { ContextDeck } from "../contextDeck-card/ContextDeckProvider.jsx";
-import { useContext } from "react";
 
-const Card = ({ card, index,onHandleCardClick }) => {
-  const { offsetStep } = useContext(ContextDeck);
+
+const Card = ({ card, index, onHandleCardValue,offsetStep}) => {
+
 
   return (
     <>
       <img
         className="cardImg"
-        onClick={() => onHandleCardClick(index)}
+        onClick={() => onHandleCardValue(card,index)}
         src={card}
         style={{
           transform: `translateY(${index * offsetStep}px)`,
@@ -27,5 +26,7 @@ export default Card;
 Card.propTypes = {
   card: PropTypes.string.isRequired,
   index: PropTypes.number.isRequired,
-  onHandleCardClick:PropTypes.func,
+  onHandleCardValue:PropTypes.func,
+  offsetStep:PropTypes.number,
+  isLastCardTrue:PropTypes.bool
 };

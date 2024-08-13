@@ -4,17 +4,14 @@ import "../styles/card.css";
 
 const CardFree = () => {
 
-  const { cardMove,offsetStep } = useContext(ContextDeck);
+  const { cardMove } = useContext(ContextDeck);
 
 
   return (
     <> 
         {
           cardMove.map((item,index) => {
-            return <img className="cardImg" src={item} alt={index} key={index} style={{
-              transform: `translateY(${index * offsetStep}px)`,
-              zIndex: index,
-            }} />
+            return <img className="cardImg" src={item} alt={index} key={index} />
           })
         }
     </>

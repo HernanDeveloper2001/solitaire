@@ -10,7 +10,8 @@ const BurgerMenu = () => {
 
   return {
     stateBurgerMenu,
-    onHandleBurgerMenu
+    onHandleBurgerMenu,
+    setStateBurgerMenu
   }
 }
 

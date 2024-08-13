@@ -40,20 +40,22 @@ import HeartJack from "../../assets/imgs/hearts/heart-jack.webp";
 import HeartQueen from "../../assets/imgs/hearts/heart-queen.webp";
 import HeartKing from "../../assets/imgs/hearts/heart-king.jpg";
 
-import SpadeAs from "../../assets/imgs/spades/spades-as.png";
-import Spade2 from "../../assets/imgs/spades/spades-2.png";
-import Spade3 from "../../assets/imgs/spades/spades-3.png";
-import Spade4 from "../../assets/imgs/spades/spades-4.png";
-import Spade5 from "../../assets/imgs/spades/spades-5.jpg";
-import Spade6 from "../../assets/imgs/spades/spades-6.jpg";
-import Spade7 from "../../assets/imgs/spades/spades-7.webp";
-import Spade8 from "../../assets/imgs/spades/spades-8.png";
-import Spade9 from "../../assets/imgs/spades/spades-9.jpg";
-import Spade10 from "../../assets/imgs/spades/spades-10.jpg";
-import SpadeJack from "../../assets/imgs/spades/spades-king.jpg";
-import SpadeQueen from "../../assets/imgs/spades/spades-queen.jpg";
-import SpadeKing from "../../assets/imgs/spades/spades-king.jpg";
+import SpadeAs from "../../assets/imgs/spades/spade-as.png";
+import Spade2 from "../../assets/imgs/spades/spade-2.png";
+import Spade3 from "../../assets/imgs/spades/spade-3.png";
+import Spade4 from "../../assets/imgs/spades/spade-4.png";
+import Spade5 from "../../assets/imgs/spades/spade-5.jpg";
+import Spade6 from "../../assets/imgs/spades/spade-6.jpg";
+import Spade7 from "../../assets/imgs/spades/spade-7.webp";
+import Spade8 from "../../assets/imgs/spades/spade-8.png";
+import Spade9 from "../../assets/imgs/spades/spade-9.jpg";
+import Spade10 from "../../assets/imgs/spades/spade-10.jpg";
+import SpadeJack from "../../assets/imgs/spades/spade-king.jpg";
+import SpadeQueen from "../../assets/imgs/spades/spade-queen.jpg";
+import SpadeKing from "../../assets/imgs/spades/spade-king.jpg";
 
-const DECK = [Diamond2,Diamond3,Diamond4,Diamond5,Diamond6,Diamond7,Diamond8,Diamond9,Diamond10,DiamondJack,DiamondAs,DiamondKing,DiamondQueen,HeartAs,Heart2,Heart3,Heart4,Heart5,Heart6,Heart7,Heart8,Heart9,Heart10,HeartJack,HeartQueen,HeartKing,SpadeAs,Spade2,Spade3,Spade4,Spade5,Spade6,Spade7,Spade8,Spade9,Spade10,SpadeJack,SpadeQueen,SpadeKing,ClubAs,Club2,Club3,Club4,Club5,Club6,Club7,Club8,Club9,Club10,ClubJack,ClubQueen,ClubKing]; 
+const DECK = [Diamond2,Diamond3,Diamond4,Diamond5,Diamond6,Diamond7,Diamond8,Diamond9,Diamond10,DiamondJack,DiamondAs,DiamondKing,DiamondQueen,HeartAs,Heart2,Heart3,Heart4,Heart5,Heart6,Heart7,Heart8,Heart9,Heart10,HeartJack,HeartQueen,HeartKing,SpadeAs,Spade2,Spade3,Spade4,Spade5,Spade6,Spade7,Spade8,Spade9,Spade10,SpadeJack,SpadeQueen,SpadeKing,ClubAs,Club2,Club3,Club4,Club5,Club6,Club7,Club8,Club9,Club10,ClubJack,ClubQueen,ClubKing];
+
+
 
 export default DECK;
