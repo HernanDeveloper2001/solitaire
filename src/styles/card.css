@@ -1,0 +1,9 @@
+.cardImg {
+    width: 100%;
+    height: 100%; /* Ajusta la altura automáticamente según el ancho */
+    border-radius: 5%;
+    object-fit: fill;
+    object-position: center;
+    cursor: pointer;
+    position: absolute;
+}

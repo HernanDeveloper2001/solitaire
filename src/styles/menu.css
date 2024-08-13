@@ -1,0 +1,82 @@
+
+.container-menu-game{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center; 
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    /* background-color: black; */
+}
+
+
+/*Clase por si el game esta en true*/
+.game-true {
+    display: none;
+}
+
+
+.start-game-button {
+    box-shadow: 1px 1px 60px 1px rgba(43, 255, 0, 0.544);
+    border-radius: 5px;
+    border: 1px solid rgb(43, 255, 0);
+    padding: 5px;
+    color: rgb(98, 255, 67);
+    cursor:pointer;
+    background-color: transparent;
+    font-size: 40px;
+}
+
+.quit-game-button {
+    box-shadow: 1px 1px 60px 1px rgba(255, 0, 0, 0.544);
+    border-radius: 5px;
+    border: 1px solid rgb(255, 0, 0);
+    padding: 5px;
+    color: rgb(255, 67, 67);
+    cursor:pointer;
+    background-color: transparent;
+    font-size: 40px;
+}
+
+.help-game-button {
+    box-shadow: 1px 1px 60px 1px rgba(0, 170, 255, 0.544);
+    border-radius: 5px;
+    border: 1px solid rgb(0, 247, 255);
+    padding: 5px;
+    color: rgb(67, 233, 255);
+    cursor:pointer;
+    background-color: transparent;
+    font-size: 40px;
+}
+
+
+/*MENU BURGER*/
+
+.container-burger-menu{ 
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+    display: flex;
+}
+
+.burger-menu {
+    width: auto;
+    z-index: 20;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.container-start-game-menu {
+    margin: 25px 50px 0 0;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}

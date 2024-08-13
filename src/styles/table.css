@@ -1,0 +1,179 @@
+.table {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 5px;
+    position: relative;
+    padding: 20px;
+    background: linear-gradient(rgba(224, 224, 224, 0.5),rgba(97, 25, 136, 0.5));
+}
+
+.container-card-free-space {
+    width: 90%;
+    display: flex;
+    justify-content: end;
+    justify-content: start;
+    align-self: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.container-card-shuffled {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap:10px;
+    margin-top:30px;
+    flex-wrap: wrap;
+}
+
+.card-shuffled {
+    margin: 5px;
+    width: 100px;
+    height: 120px;
+    display: flex;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    position: relative;
+    border-radius: 5px;
+    background-image: url("../assets/imgs/card.webp");
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+.card-free-space {
+    margin: 5px;
+    width: 100px;
+    height: 120px;
+    border-radius: 5px;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    background-image: url("../assets/imgs/card.webp");
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+.container-card-deck {
+    width: auto;
+    align-self: flex-start;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top:30px;
+    position: relative;
+}
+
+.deck {
+    margin: 5px;
+    width: 100px;
+    height: 120px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    position: relative;
+    flex-shrink: 0;
+    background-image: url("../assets/imgs/card.webp");
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+.renew-deck {
+    margin: 5px;
+    width: 100px;
+    height: 120px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    position: relative;
+    background-image: url("../assets/imgs/card.webp");
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.renew-deck::after{
+    content: "";
+    width: 40%;
+    height: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: yellow;
+}
+
+.renew-deck::before{
+    content: "";
+    width: 5px;
+    height: 40%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: yellow;
+}
+
+.renew-deck-1::after {
+    content: "";
+    width: 40%;
+    height: 5px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: yellow;
+}
+
+.renew-deck-1::before{
+    content: "";
+    width: 5px;
+    height: 40%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: yellow;
+}
+
+
+.renew-deck-2::after {
+    content: "";
+    width: 5px;
+    height: 40%;
+    position: absolute;
+    left: 0;
+    bottom:0;
+    background-color: yellow;
+}
+
+.renew-deck-2::before {
+    content: "";
+    width: 40%;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: yellow;
+}
+
+.renew-deck-3::after {
+    content: "";
+    width: 5px;
+    height: 40%;
+    position: absolute;
+    right: 0;
+    bottom:0;
+    background-color: yellow;
+}
+
+.renew-deck-3::before {
+    content: "";
+    width: 40%;
+    height: 5px;
+    position: absolute;
+    right:0;
+    bottom: 0;
+    background-color: yellow;
+}
